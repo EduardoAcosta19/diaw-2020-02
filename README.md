@@ -15,4 +15,4 @@ Configura el nombre del autor
   Configura url del Author
  '$npm set init.author.url "example.com"'
    Configura licencia
- '$npm set init.licence "CC0"'
+ '$npm set init.licence "CC0"

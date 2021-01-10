@@ -1,0 +1,20 @@
+{
+  "name": "p-00-frontenddep",
+  "version": "0.0.0",
+  "description": "Código base para administrar paquetería front end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoAcosta19/diaw-2020-02.git"
+  },
+  "keywords": ["node","frontend"],
+  "author": "Eduardo Acosta <l161130055@gamadero.tecnm.mx>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardoAcosta19/diaw-2020-02/issues"
+  },
+  "homepage": "https://github.com/EduardoAcosta19/diaw-2020-02#readme"
+}
