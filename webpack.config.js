@@ -1,9 +1,11 @@
 const path = require('path')
+const ESlintPlugin = require('eslint-webpack-plugin')
+
 console.log(`Ruta de Index.js: ${path.join(__dirname, 'src/index.js')}`);
 module.exports = {
     // 1. Especificando el archivo idex de entrada
     entry: path.join(__dirname, 'src/index.js'),
-    // 2.Especificar el archivo de salida
+    // 2. Especificar el archivo de salida
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -14,5 +16,15 @@ module.exports = {
         port: 4040,
         compress: true,
         publicPath: '/'
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            },
+        ]
+    },
+    plugins: [new ESlintPlugin()]
 }
